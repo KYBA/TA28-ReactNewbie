@@ -57,8 +57,8 @@ export const categoryList = [
 
 export const locationList = [
   {
-    label: 'Anywhere',
-    value: 'Anywhere',
+    label: 'All',
+    value: 'All',
     isCheck: false,
   },
   {
@@ -85,8 +85,8 @@ export const locationList = [
 
 export const timeList = [
   {
-    label: 'All Day',
-    value: 'All Day',
+    label: 'All',
+    value: 'All',
     isCheck: false,
   },
   {

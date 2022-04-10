@@ -182,39 +182,75 @@ export default function Activites() {
 
           <div className='isRightTitle box  isHaveRoundBg'>
             <div>Location</div>
-            {
-              locationListEnum.map((item, index) => {
-                return (
-                  <div className='mt-44AndRound' key={index}>
-                    <div>{item.label}</div>
-                    <div
-                      className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                      onClick={() => setLocationCheck(item.value)}>
+            <div>
+              {
+                locationListEnum.map((item, index) => {
+                  return (
+                    <div key={item.value}>
+                      {
+                        item.parent ?
+                          <div className='son'>
+                            <div className='mt-44AndRound isMt-21'>
+                              <div className='isChildrenText'>{item.label}</div>
+                              <div
+                                className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                                onClick={() => setLocationCheck(item.value)}>
+                              </div>
+                            </div>
+                          </div>
+                          :
+                          <div className='mt-44AndRound isMt-21'>
+                            <div>{item.label}</div>
+                            <div
+                              className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                              onClick={() => setLocationCheck(item.value)}>
+                            </div>
+                          </div>
+                      }
                     </div>
-                  </div>
-                )
+
+                  )
+                })
               }
-              )
-            }
+            </div>
+
             <div className='sevenroundArrBg'></div>
           </div>
 
           <div className='isRightTitle box isHaveRoundBg'>
             <div>Time</div>
-            {
-              timeListEnum.map((item, index) => {
-                return (
-                  <div className='mt-44AndRound' key={index}>
-                    <div>{item.label}</div>
-                    <div>{item.isCheck}</div>
-                    <div
-                      className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                      onClick={() => setTimeCheck(item.value)}>
+            <div>
+              {
+                timeListEnum.map((item, index) => {
+                  return (
+                    <div key={item.value}>
+                      {
+                        item.parent ?
+                          <div className='son'>
+                            <div className='mt-44AndRound isMt-21'>
+                              <div className='isChildrenText'>{item.label}</div>
+                              <div
+                                className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                                onClick={() => setTimeCheck(item.value)}>
+                              </div>
+                            </div>
+                          </div>
+                          :
+                          <div className='mt-44AndRound isMt-21'>
+                            <div>{item.label}</div>
+                            <div
+                              className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                              onClick={() => setTimeCheck(item.value)}>
+                            </div>
+                          </div>
+                      }
                     </div>
-                  </div>
-                )
-              })
-            }
+
+                  )
+                })
+              }
+            </div>
+            
           </div>
         </div>
       </div>
