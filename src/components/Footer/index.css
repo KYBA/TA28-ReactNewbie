@@ -1,0 +1,43 @@
+.footer {
+  margin-top: 100px;
+  display: flex;
+  /* min-height: 332px; */
+  /* max-height: 332px; */
+  box-sizing: border-box;
+  background-color: rgb(57, 154, 137);
+  padding: 96px 0 86px 282px;
+}
+
+.mr-138 {
+  margin-right: 138px;
+}
+
+.mt-38 {
+  margin-top: 38px;
+  cursor: pointer;
+  color: white;
+}
+.isSetBgGreen {
+  background-color: green;
+}
+
+.footer_btn .footer_btn {
+  display: flex;
+}
+
+.btnArr {
+  display: flex;
+}
+
+.ft_btn {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+  background-color: #fca100;
+  border-radius: 50%;
+  margin-right: 17px;
+}
+
+
