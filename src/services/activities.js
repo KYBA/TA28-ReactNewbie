@@ -58,7 +58,7 @@ export const categoryList = [
 export const locationList = [
   {
     label: 'All',
-    value: 'All',
+    value: '',
     isCheck: false,
   },
   {
