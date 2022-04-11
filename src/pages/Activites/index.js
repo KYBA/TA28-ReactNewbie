@@ -81,7 +81,7 @@ export default function Activites() {
       location,
       time,
       pageNum,
-      pageSize: 6
+      pageSize: 8
     }
     return params
   }
