@@ -72,8 +72,8 @@ export const locationList = [
     isCheck: false,
   },
   {
-    label: 'Boxhill',
-    value: 'Boxhill',
+    label: 'Box Hill',
+    value: 'Box Hill',
     isCheck: false,
   },
   {
