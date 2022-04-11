@@ -28,13 +28,13 @@ export const categoryList = [
   },
   {
     label: 'Role-play games',
-    value: 'Role-play',
+    value: 'Role-play games',
     parent: 'game',
     isCheck: false,
   },
   {
     label: 'Boardgames',
-    value: 'Board',
+    value: 'Boardgames',
     parent: 'game',
     isCheck: false,
   },
