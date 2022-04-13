@@ -122,7 +122,7 @@ export default function Activites() {
       </div>
 
       {/* 搜索区域 */}
-      <div className='isSearch'>
+      {/* <div className='isSearch'>
         <div className='tip'>Searching activities</div>
         <div className='title fz-48T'>Find events near you</div>
         <div className='isIpt'>
@@ -139,7 +139,7 @@ export default function Activites() {
           ></div>
         </div>
         <div></div>
-      </div>
+      </div> */}
 
       {/* list 列表加搜索 */}
       <div className='isList' >

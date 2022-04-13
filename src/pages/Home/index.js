@@ -2,7 +2,6 @@ import React from 'react'
 import { useNavigate, NavLink, Outlet, useOutlet } from 'react-router-dom'
 // import Header from '../../components/Header'
 import Sport from '../../components/Sport'
-import RoundArrBg from '../../components/RoundArrBg'
 import './index.css'
 
 
