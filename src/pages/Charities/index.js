@@ -114,17 +114,20 @@ export default function Activites() {
         <div className='fiveroundArrBg'></div>
         <div className='sixroundArrBg'></div>
         <div className='left'>
-          <div className='fz-64'>Explore cheerful and fascinating social events</div>
-          <div className='mt-31 fz-16'>Bring people together with Gathero.
-            It’s easy to join in events you love, gethering palyer and quickly make new friends, build your professional network, or just have some fun.</div>
+          <div className='fz-64'>Find the charity that suits your needs</div>
+          <div className='mt-31 fz-16'>It may be difficult for you to choose a legitimate and appropriate charity 
+          to help those disaster affected victims.
+           But we will provide you with a list of legally registered charities, whether you want to filter by region, 
+           time of existance or size, you can find what you need on this page. Of course, 
+           if you already have a vague goal in mind, you can also search the keywords to find your favorite charity.</div>
         </div>
-        <img alt="" className='header_img' src={require('../../assets/images/pageNo2.png')} />
+        <img alt="" className='header_img' src={require('../../assets/images/PageCharity.jpg')} />
       </div>
 
       {/* 搜索区域 */}
       {/* <div className='isSearch'>
-        <div className='tip'>Searching activities</div>
-        <div className='title fz-48T'>Find events near you</div>
+        <div className='tip'>EXPLORING OPTIONS</div>
+        <div className='title fz-48T'>Search charities for keyword</div>
         <div className='isIpt'>
           <input
             onChange={handelChange}
@@ -145,8 +148,8 @@ export default function Activites() {
       <div className='isList' >
         <ActiveList childRef={childRef} activities={activities} />
         <div className="right">
-          <div className='isRightTitle mt-62 box'>
-            <div>Categories</div>
+          <div className='isRightTitle mt-62 box1'>
+            <div className='fz-24'>Time of existance</div>
             <div>
               {
                 categoryListEnum.map((item, index) => {
@@ -180,8 +183,8 @@ export default function Activites() {
             </div>
           </div>
 
-          <div className='isRightTitle box  isHaveRoundBg'>
-            <div>Location</div>
+          <div className='isRightTitle box2  isHaveRoundBg'>
+            <div className='fz-24'>States & Territories</div>
             <div>
               {
                 locationListEnum.map((item, index) => {
@@ -217,8 +220,8 @@ export default function Activites() {
             <div className='sevenroundArrBg'></div>
           </div>
 
-          <div className='isRightTitle box isHaveRoundBg'>
-            <div>Time</div>
+          <div className='isRightTitle box3 isHaveRoundBg'>
+            <div className='fz-24'>Size of charities</div>
             <div>
               {
                 timeListEnum.map((item, index) => {

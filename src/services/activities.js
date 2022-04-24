@@ -22,35 +22,23 @@ export const categoryList = [
     isCheck: false,
   },
   {
-    label: 'Game',
-    value: 'Game',
+    label: '0 - 5 years',
+    value: '0 - 5 years',
     isCheck: false,
   },
   {
-    label: 'Role-play games',
-    value: 'Role-play',
-    parent: 'game',
+    label: '5 - 10 years',
+    value: '5 - 10 years',
     isCheck: false,
   },
   {
-    label: 'Boardgames',
-    value: 'Board',
-    parent: 'game',
+    label: '10 - 15 years',
+    value: '10 - 15 years',
     isCheck: false,
   },
   {
-    label: 'Sports',
-    value: 'Sports',
-    isCheck: false,
-  },
-  {
-    label: 'Party',
-    value: 'Party',
-    isCheck: false,
-  },
-  {
-    label: 'Other',
-    value: 'Other',
+    label: 'More than 20 years',
+    value: 'More than 20 years',
     isCheck: false,
   },
 ]
@@ -62,25 +50,47 @@ export const locationList = [
     isCheck: false,
   },
   {
-    label: 'West melbourne',
-    value: 'West melbourne',
+    label: 'Victoria',
+    value: 'Victoria',
     isCheck: false,
   },
   {
-    label: 'Melbourne',
-    value: 'Melbourne',
+    label: 'New South Wales',
+    value: 'New South Wales',
     isCheck: false,
   },
   {
-    label: 'Box Hill',
-    value: 'Box Hill',
+    label: 'Queensland',
+    value: 'Queensland',
     isCheck: false,
   },
   {
-    label: 'Docklands',
-    value: 'Docklands',
+    label: 'South Australia',
+    value: 'South Australia',
     isCheck: false,
   },
+  {
+    label: 'Western Australia',
+    value: 'Western Australia',
+    isCheck: false,
+  },
+  {
+    label: 'Australia Capital Territory',
+    value: 'Australia Capital Territory',
+    isCheck: false,
+  },
+  {
+    label: 'Tasmania',
+    value: 'Tasmania',
+    isCheck: false,
+  },
+  {
+    label: 'Northern Territory',
+    value: 'Northern Territory',
+    isCheck: false,
+  },
+
+
 ]
 
 export const timeList = [
@@ -90,18 +100,18 @@ export const timeList = [
     isCheck: false,
   },
   {
-    label: 'Morning',
-    value: 'Morning',
+    label: 'Large',
+    value: 'Large',
     isCheck: false,
   },
   {
-    label: 'Afternoon',
-    value: 'Afternoon',
+    label: 'Medium',
+    value: 'Medium',
     isCheck: false,
   },
   {
-    label: 'Evening',
-    value: 'Evening',
+    label: 'Small',
+    value: 'Small',
     isCheck: false,
   },
 ]
