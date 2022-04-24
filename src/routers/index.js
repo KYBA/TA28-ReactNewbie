@@ -1,9 +1,8 @@
 import { Navigate } from 'react-router-dom'
 import Home from '../pages/Home'
-import Activites from '../pages/Activites'
-import ContactUs from '../pages/ContactUs'
-import MyAccount from '../pages/MyAccount'
-import Calendar from '../pages/Calendar'
+import Charities from '../pages/Charities'
+import Disasters from '../pages/Disasters'
+import QA from '../pages/QA'
 import AboutUs from '../pages/AboutUs'
 
 // 路由表
@@ -13,21 +12,18 @@ const routes = [
     element: <Home />
   },
   {
-    path: '/activites',
-    element: <Activites />
+    path: '/charities',
+    element: <Charities />
   },
   {
-    path: '/contactUs',
-    element: <ContactUs />
+    path: '/disasters',
+    element: <Disasters />
   },
   {
-    path: '/myAccount',
-    element: <MyAccount />
+    path: '/QA',
+    element: <QA />
   },
-  {
-    path: '/calendar',
-    element: <Calendar />
-  },
+
   {
     path: '/aboutus',
     element: <AboutUs />

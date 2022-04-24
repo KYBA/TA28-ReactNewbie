@@ -55,8 +55,8 @@ div {
   background: url('../../assets/images/roundArrBg.png');
   position: relative;
   background-size: cover;
-  left: 595px;
-  top: 816px;
+  left: 580px;
+  top: 780px;
   z-index: -1;
 }
 
@@ -92,7 +92,7 @@ div {
 .isImg {
   min-width: 640px;
   max-width: 733px;
-  background: url(../../assets/images/main_left.jpg);
+  background: url(../../assets/images/main_left.png);
   background-size: cover;
 }
 
@@ -111,6 +111,21 @@ div {
   margin-top: 40px;
 }
 
+.fz-64w {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 86px;
+}
+
+.fz-48 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-size: 48px;
+  line-height: 48px;
+}
+
 .mt-40Text {
   line-height: 30px;
   font-family: 'Roboto';
@@ -124,18 +139,7 @@ div {
 
   color: #666666;
 }
-.banner-font {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 86px;
-  /* or 134% */
 
-  /* Text/Title Text */
-
-  color: #333333;
-}
 .fz-16 {
   font-size: 16px;
 }
@@ -170,15 +174,31 @@ div {
   background-color: #1f6256;
 }
 
-.isRight .isGreenBox {
+.isGreenBox {
+  position: absolute;
   width: 85px;
-  height: 64px;
+  height: 60px;
+  right: 0px;
+  bottom: 0px;
   background-color: rgb(67, 204, 116);
   position: absolute;
-  right: 0px;
-  bottom: -40px;
+
 }
 
+.fz-16g{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  letter-spacing: 0.1em;
+
+  /* Text/Body Text */
+
+  color: #666666;
+}
 .container .isMain {
   position: relative;
   overflow: hidden;
@@ -252,187 +272,10 @@ div {
   font-family: 'Raleway';
 }
 
-.isBgWhite {
-  background-color: white;
-}
 
-.isLogin {
-  display: flex;
-  padding-left: 198px;
-  padding-right: 15px;
-  margin-top: 272px;
-  /* height: 400px; */
-  background-color: rgb(57, 154, 137);
-  padding-bottom: 29px;
-  position: relative;
-  justify-content: space-between;
-  padding-right: 216px;
-}
-.isCreate {
-  padding-left: 141px;
-}
-.isCreateTip {
-  margin-left: -100px;
-}
-.isLoginAfterFaceBox {
-  /* margin-left: -100px */
-  padding-left: 151px;
-}
-
-.isLogin-left {
-  width: 50%;
-  margin-top: 98px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 78px;
-}
-
-.isLogin-left .isLoginAfterImg {
-  margin-top: -22px;
-  min-width: 175px;
-  max-width: 175px;
-  min-height: 173px;
-  max-height: 173px;
-  border-radius: 50%;
-  /* background-color: red; */
-  background: no-repeat;
-}
-
-.isLogin-left .isTitle {
-  font-size: 48px;
-  color: white;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 64px;
-  /* identical to box height, or 133% */
-
-  font-feature-settings: 'pnum' on, 'lnum' on;
-
-  /* Text/White */
-
-  color: #ffffff;
-}
-.fz-48 {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-size: 48px;
-  line-height: 48px;
-}
-
-.fz-64 {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-}
-.isLogin-left .isTip {
-  margin-top: 43px;
-  color: white;
-  font-size: 14px;
-}
-
-.isLogin-right {
-  width: 53%;
-}
-
-.isLogin-right .isName {
-  color: white;
-  margin-top: 65px;
-  font-size: 48px;
-}
-.isLogin-right .isIptSize {
-  font-size: 16px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  /* identical to box height, or 24px */
-
-  /* Text/White */
-
-  color: #ffffff;
-}
-
-/* 登陆后的 */
-.isNameT {
-  color: white;
-  margin-top: 95px;
-  padding-bottom: 118px;
-}
-
-.isNameT .isLoginBtn {
-  color: #ffffff !important;
-  margin-top: 58px;
-  width: 111px;
-  height: 54px;
-  line-height: 54px;
-  text-align: center;
-  border-radius: 8px;
-  background-color: #fca100;
-}
-
-.loginAfterName {
-  color: white;
-  font-size: 36px;
-}
-
-.loginAfter {
-  color: white;
-  font-size: 36px;
-  margin-top: 40px;
-}
-
-.isLoginAfter {
-  justify-content: flex-start !important;
-}
-.isLoginAfter-left {
-  width: 20%;
-}
-
-.isLoginAfterBtn {
-  margin-left: 190px;
-}
-.isLogin-right .isName .isIpt {
-  margin-top: 24px;
-  display: block;
-  width: 505px;
-  height: 58px;
-  padding-left: 30px;
-  border: none;
-  border-radius: 15px;
-  outline: none;
-}
-
-.loginFotter {
-  display: flex;
-  justify-content: center;
-  /* position: relative; */
-}
-
-.loginFotter .isLoginBtn {
-  margin-top: 14px;
-  width: 111px;
-  height: 54px;
-  line-height: 54px;
-  text-align: center;
-  border-radius: 8px;
-  background-color: #fca100;
-  color: white;
-  /* margin-left: 160px; */
-  margin-left: 400px;
-}
-
-.loginFotter .isLoginBtnT {
-  color: white;
-  width: 200px;
-  margin-right: 120px;
-}
 
 .isWaiting {
-  height: 385px;
+  height: 180px;
   margin-top: 175px;
   display: flex;
   box-sizing: border-box;
@@ -442,93 +285,95 @@ div {
   padding-left: 269px;
 }
 
-.isWaiting .left .title {
-  font-size: 14px;
-  color: #b2b2b2;
-}
-
 .isWaiting .left .isWaitingText {
   font-size: 48px;
   font-weight: 700px;
-  margin-top: 47px;
+  margin-top: 24px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
   /* identical to box height, or 133% */
-
   font-feature-settings: 'pnum' on, 'lnum' on;
-
   /* Text/Title Text */
-
   color: #333333;
 }
 
-.isWaiting .left .tip {
-  margin-top: 44px;
-  font-size: 14px;
-  color: #707070;
+.fourroundArrBg {
+  position: absolute;
+  width: 116px;
+  height: 116px;
+  left: -26px;
+  top: 1942px;
+  min-width: 118px;
+  min-height: 118px;
+  background: url('../../assets/images/roundArrBg.png');
+  position: absolute;
+  background-size: cover;
 }
 
-.isWaiting .right {
-  width: 50%;
+.isImpact{
+  margin-top: 175px;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
-.isWaiting .right .isBtn {
-  display: flex;
-  margin-right: 147px;
-}
-
-.Btn {
-  width: 58px;
-  height: 58px;
-  line-height: 58px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.isActiveT {
-  background-color: #1f6256;
-}
-
-.footer {
-  margin-top: 100px;
-  display: flex;
-  min-height: 334px;
   box-sizing: border-box;
-  background-color: #319b88;
-  padding: 102px 0 90px 289px;
 }
 
-.mr-138 {
-  margin-right: 138px;
+
+.isImpact .left{
+  margin-left: 200px;
+  width: 400px;
 }
 
-.mt-38 {
-  margin-top: 38px;
-  cursor: pointer;
-}
-
-.footer_btn .footer_btn {
+.isImpact .right{
   display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 120px;
+  /* padding-right: 90px; */
+  width: 40%;
+  position: relative;
 }
 
-.btnArr {
+.isImpact .num{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+  color: #194D44;
+}
+
+.isrow{
   display: flex;
+  flex-direction: row;
 }
 
-.ft_btn {
-  cursor: pointer;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  text-align: center;
-  background-color: #fca100;
-  border-radius: 50%;
-  margin-right: 17px;
+.isGroup{
+  max-width: 136px;
+  height: 96px;
+}
+
+
+
+.fz-14{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #666666;
+}
+
+.ml-60 {
+  margin-left: 60px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
 }

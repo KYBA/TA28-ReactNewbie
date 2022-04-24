@@ -16,28 +16,25 @@ export default function Header() {
   }
   return (
     <div className="footer">
-    <div className='one mr-138'>
-      <dl>
-        <dt className='mt-38'>Your Account</dt>
-        <dt className='mt-38'>Login</dt>
-        <dt className='mt-38'>Sign up</dt>
-        <dt className='mt-38'>Help</dt>
-      </dl>
-    </div>
-    <div className='mr-138'>
-      {/* <dl>
-        <dt className='mt-38'>Company</dt>
-        <dt className='mt-38'>Monash University</dt>
-        <dt className='mt-38'>Contact Us</dt>
-      </dl> */}
+    <div>
       <dl>
         <dt className='mt-38'>Company</dt>
         <dt className='mt-38'>Monash University</dt>
         <dt className='mt-38'>Contact Us</dt>
-      </dl>
-      
+      </dl> 
     </div>
-    <div className=''>
+
+
+    <div className='ml-100'> 
+      <dl>
+        <dt className='mt-38'>Data Support</dt>
+        <dt className='mt-38'>National Charities and Non-profit Commission (NCNC) </dt>
+        <dt className='mt-38'>Australian Charities and Not-for-profits Commission (ACNC) </dt>
+        <dt className='mt-38'>Australian Goverment/Department of Home Affairs</dt>
+      </dl>
+    </div>
+
+    <div className='ml-100'>
       <dl className='footer_btn'>
       <dt className='mt-38'>Our Website Designer</dt>
         <div className='btnArr mt-38'>
@@ -47,7 +44,7 @@ export default function Header() {
           <div className='ft_btn'>DW</div>
           <div className='ft_btn'>AP</div>
         </div>
-          <div className=''>version 4.11</div>
+          <div className=''>version 4.24</div>
       </dl>
 
     </div>

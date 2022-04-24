@@ -21,43 +21,32 @@ export default function SwiperItem() {
     >
       <SwiperSlide>
         <div className='box'>
-          <img className='isImageT' src={require('../../assets/images/wtk.jpg')} alt="" />
-          <div className='gameText'>Role-Play game</div>
-          <div className='text fz-24 fm-raleway'>Who is the Killer!?</div>
-          <div className='message'>The number of participants was six to eight people, there are five people now, we are all Chinese international students and usually play on weekends</div>
+          <img className='isImageT' src={require('../../assets/images/flood.jpg')} alt="" />
+          <div className='text fz-24 fm-raleway'>Flood</div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='box'>
-          <img className='isImageT' src={require('../../assets/images/mahjong.jpg')} alt="" />
-          <div className='gameText'>Card Game</div>
-          <div className='text fz-24 fm-raleway'>Mahjong -  3 wait for 1!
-            URGENT!!!</div>
-          <div className='message'>We usually do it on a Saturday afternoon in the CBD and we currently have two ladies and one gentleman.</div>
+          <img className='isImageT' src={require('../../assets/images/bushfire.jpg')} alt="" />
+          <div className='text fz-24 fm-raleway'>Bushfire</div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='box'>
-          <img className='isImageT' src={require('../../assets/images/tableTennis.jpg')} alt="" />
-          <div className='gameText'>Sport</div>
-          <div className='text fz-24 fm-raleway'>Table tennis</div>
-          <div className='message'>I'm a newbie , just have fun!</div>
+          <img className='isImageT' src={require('../../assets/images/cyclone.jpg')} alt="" />
+          <div className='text fz-24 fm-raleway'>Cyclone</div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='box'>
-          <img className='isImageT' src={require('../../assets/images/joker.jpg')} alt="" />
-          <div className='gameText'>Card game</div>
-          <div className='text fz-24 fm-raleway'>Dou di zhu(3 people game)</div>
-          <div className='message'>My roommate and I both want to play Dou di zhu, and we're waiting for another player. We live near Clayton, welcome to play!</div>
+          <img className='isImageT' src={require('../../assets/images/storms.jpg')} alt="" />
+          <div className='text fz-24 fm-raleway'>Storms</div>
         </div>
       </SwiperSlide>
       <SwiperSlide>
         <div className='box'>
-          <img className='isImageT' src={require('../../assets/images/badminton.jpg')} alt="" />
-          <div className='gameText'>Sport</div>
-          <div className='text fz-24'>Badminton</div>
-          <div className='message'>I am a Chinese student looking for a badminton doubles teammate!</div>
+          <img className='isImageT' src={require('../../assets/images/earthquake.jpg')} alt="" />
+          <div className='text fz-24 fm-raleway'>Earthquake</div>
         </div>
       </SwiperSlide>
     </Swiper>

@@ -8,8 +8,8 @@ import './index.css'
 export default function Home() {
 
   const navigate = useNavigate()
-  const goActivites = () => {
-    navigate('/activites')
+  const goCharities = () => {
+    navigate('/Charities')
   }
 
   console.log('@@@', useOutlet())
@@ -25,17 +25,16 @@ export default function Home() {
         <div className='tworoundArrBg'></div>
         <div className='isImg'></div>
         <div className='isRight'>
-          <div className='banner-font'>
-            <h1 className='fz-48 banner-font'>Connections with</h1>
-            <h1 className='mt-40 fz-48'>Chinese international</h1>
-            <h1 className='mt-40 fz-48'>students</h1>
-            <div className='mt-40 mt-40Text'>New to Australia from China to study? Hard to meet people and make friends? International students use Gathero to meet new people, make friends, find support, and connect with Chinese communities.</div>
+          <div>
+            <h1 className='fz-64w'>Chario connects</h1>
+            <h1 className='fz-64w'>charities to the </h1>
+            <h1 className='fz-64w'>community.</h1>
+            <div className='mt-40Text'>Australia has always been a country prone to natural disasters, with many people displaced by the effects of natural disasters. Chario hopes to provide enough information to help both donors and victims.</div>
           </div>
-
-          <div className='isRight_btn' onClick={goActivites}>Start your journy</div>
-          <div className='isGreenBox'></div>
+          <div className='isRight_btn' onClick={goCharities}>Help now</div>
         </div>
         <div className='isOneRoundArr'></div>
+        <div className='isGreenBox'></div>
       </div>
 
       {/* 中间部分 */}
@@ -43,14 +42,11 @@ export default function Home() {
         <div className='threeroundArrBg'></div>
         {/* 中间左侧 */}
         <div className="isCenter_left">
-          <div>Different Activities</div>
-          <h1 className='fz-48'>Still worried</h1>
-          <h1 className='mt-30 fz-48'>about gathering</h1>
-          <h1 className='mt-30 fz-48'>friends ?</h1>
+          <div className='fz-16g'>OUR SOLUTIONS</div>
+          <h1 className='fz-48'>What informations will Chario offer to you？</h1>
           <div className='mt-32Text fz-16 colorBlack'>
-            Want to play table tennis but have no partner? Want to play mahjong but can't get anyone together? It doesn't matter, our platform will give you chance to gather people! Whether you want to organize or participate, you can find what you are looking for.
-          </div>
-          <div className='isBtn' onClick={goActivites}>Join now!</div>
+          Chario is a website focused on helping victims of natural disasters in Australia. It can help donors find legitimate charities to do their part and also help victims find the relief programs they can get help with.          </div>
+          <div className='isBtn' onClick={goCharities}>Join now!</div>
           {/* <NavLink className='isBtn' to="/activites">Join now!</NavLink> */}
         </div>
 
@@ -60,26 +56,26 @@ export default function Home() {
           <div className='isCenter_right_leftItem'>
             <div className='isCenter_right_item bgShadow '>
               <img className='isIcon isNoMt' src={require("../../assets/images/leftone.png")} />
-              <h2 className='mt-32 fz-24 fm-raleway'>Exercises</h2>
-              <div className='mt-30Text fz-16 colorBlack lh150'>Basketball, badminton, table tennis, even if you just wanna someone for a morning jog, you'll find a partner with us.</div>
+              <h2 className='mt-32 fz-24 fm-raleway'>About us</h2>
+              <div className='mt-30Text fz-16 colorBlack lh150'>Integrate information from official charities to help donors avoid scams and help victims of natural disasters get quickly support.</div>
             </div>
             <div className='isCenter_right_item'>
               <img className='isIcon isNoMt' src={require("../../assets/images/lefttwo.png")} />
-              <h2 className='mt-32 fz-24 fm-raleway'>Parties</h2>
-              <div className='mt-30Text fz-16 colorBlack lh150'>Inviting someone to a gourmet dinner, petting others cat or dog? Or have a birthday party! Get involved now.</div>
+              <h2 className='mt-32 fz-24 fm-raleway'>Charities</h2>
+              <div className='mt-30Text fz-16 colorBlack lh150'>Australia official registered charities focus on providing assistance programs to victims of natural disasters.</div>
             </div>
           </div>
           {/* 中间的右侧的右侧部分 */}
           <div className='isCenter_right_rightItem '>
             <div className='isCenter_right_item isCenter_right_itemR'>
               <img className='isIcon isNoMt' src={require("../../assets/images/rightone.png")} />
-              <h2 className='mt-32 fz-24 fm-raleway'>Board Games</h2>
-              <div className='mt-30Text fz-16 colorBlack lh150'>Wanna play Mahjong but always missing one person, wanna play Mystery murder game but always not enough players? Why don't you try calling it on our platform?</div>
+              <h2 className='mt-32 fz-24 fm-raleway'>Disaster infos</h2>
+              <div className='mt-30Text fz-16 colorBlack lh150'>Information on natural disasters that frequently occur in Australia as well as recent specific disasters.</div>
             </div>
             <div className='isCenter_right_item'>
               <img className='isIcon isNoMt' src={require("../../assets/images/righttwo.png")} />
               <h2 className='mt-32 fz-24 colorBlack fm-raleway'>More...</h2>
-              <div className='mt-30Text fz-16 colorBlack lh150'>Anything is possible as long as you need someone to be with you.</div>
+              <div className='mt-30Text fz-16 colorBlack lh150'>As a public service website to provide infomations to help the community.</div>
             </div>
           </div>
 
@@ -87,89 +83,39 @@ export default function Home() {
         </div>
       </div>
 
-      {/* 登录部分 */}
-
-      <div className='isLogin'>
-        <div className='isLogin-left'>
-          <div className='isTitle'>Login</div>
-          <div className='isTip'>You can read our news letter and get free knowledge</div>
-        </div>
-        <div className='isLogin-right'>
-          <div className='isName isIptSize'>
-            <div>Username</div>
-            <input className='isIpt' type="text" placeholder='Input your username' />
-          </div>
-          <div className='isName isIptSize'>
-            <div>Password</div>
-            <input className='isIpt' type="text" placeholder='Input your password' />
-          </div>
-
-          <div className='mt-26'>Dont't have an account ? Sign up</div>
-
-          <div className='loginFotter'>
-            <div></div>
-            <div className='isLoginBtn'>Login</div>
-          </div>
-
-        </div>
-
+      {/* Disaster display 部分*/}
+     
+      <div className='isImpact'>
         <div className='fourroundArrBg'></div>
-
+        <div className="left">
+          <div className='fz-16g'>SITUATION</div>
+          <div className='fz-48 fm-raleway mt-16'>Impacts of natural disasters in Australia</div>
+        </div>
+        <div className='right'>
+          <div className='isrow'>
+            <div className='isGroup'>
+            <div className='num'>12</div>
+            <div className='fz-14'>Disasters in a year</div>
+            </div>
+            <div className='isGroup ml-60'>
+            <div className='num'>375K</div>
+            <div className='fz-14'>People affected</div>
+            </div>
+            <div className='isGroup ml-60'>
+            <div className='num'>19K</div>
+            <div className='fz-14'>Economic losses</div>
+            </div>
+          </div>
+          <div className='fz-14 mt-24'>Australia is a country with frequent natural disasters. Many people are affected by natural disasters every year. They were either displaced or suffered economic losses. Helping the victims is the kind of care that our large community should provide.</div>
+        </div>
       </div>
 
-      {/* 注册 */}
-      {/* <div className='isLogin isCreate'>
-        <div className='isLogin-left'>
-          <div className='isTitle'>Create account</div>
-          <div className='isTip isCreateTip'>Make new friends, gather around hobbies you love, or just have some fun.</div>
-        </div>
-        <div className='isLogin-right'>
-          <div className='isName isIptSize'>
-            <div>Username</div>
-            <input className='isIpt' type="text" placeholder='Input your username' />
-          </div>
-          <div className='isName isIptSize'>
-            <div>Password</div>
-            <input className='isIpt' type="text" placeholder='Input your password' />
-          </div>
-          <div className='isName isIptSize'>
-            <div>Email adress（optional）</div>
-            <input className='isIpt' type="text" placeholder='Input your email address' />
-          </div>
-
-
-          <div className='loginFotter'>
-            <div></div>
-            <div className='isLoginBtn isLoginBtnT'>Create account</div>
-          </div>
-
-        </div>
-
-      </div> */}
-
-      {/* 登陆后的 */}
-      {/* <div className='isLogin isLoginAfter isLoginAfterFaceBox'>
-        <div className='isLogin-left isLoginAfter-left'>
-          <div className='isLoginAfterImg' style={{ background: `url(${require("../../assets/images/test.png")})` }}></div>
-        </div>
-        <div className='isLogin-right'>
-          <div className='isNameT'>
-            <div className='loginAfterName'>welcome UserName!</div>
-            <div className='loginAfter'>Meet your friends right now!</div>
-            <div className='isLoginBtn isLoginAfterBtn'>Join now!</div>
-
-          </div>
-        </div>
-
-      </div> */}
-
-
-      {/* activities on going 部分*/}
+      {/* Disaster display 部分*/}
       <div className='isWaiting'>
         <div className="left">
-          <div className='title'>ACTIVITIES ON GOING</div>
-          <div className='isWaitingText'>Waiting for you to join</div>
-          <div className='tip'>Find your favorite activities, come out and join us! You can also be an organizer and initiate the event you want!</div>
+          <div className='fz-16g'>LEARN ABOUT</div>
+          <div className='isWaitingText'>Waiting for your help</div>
+          <div className='fz-16 colorBlack lh150'>Different natural disasters can obviously affect people in different ways. Click on the pictures below to see more information.</div>
         </div>
       </div>
 
