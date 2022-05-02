@@ -22,14 +22,12 @@ export default function Header() {
         <div className='LoginName'>Chario.</div>
       </div>
       <div className='isHeader_right'>
-        <NavLink className={({ isActive }) => { return pathname === '/home' ? 'isActive' : 'isHeader_right_menu' }} to="/home">Home</NavLink>
-        <NavLink className={({ isActive }) => { return pathname === '/aboutus' ? 'isActive' : 'isHeader_right_menu' }} to="/aboutus">About us</NavLink>
-        <NavLink className={({ isActive }) => { return pathname === '/disasters' ? 'isActive' : 'isHeader_right_menu' }} to="/disasters">Disasters</NavLink>
-        <NavLink className={({ isActive }) => { return pathname === '/charities' ? 'isActive' : 'isHeader_right_menu' }} to="/charities">Charities</NavLink>
-        <NavLink className={({ isActive }) => { return pathname === '/QA' ? 'isActive' : 'isHeader_right_menu' }} to="/QA">Q&A</NavLink>
-
+        <NavLink className={({ isActive }) => { return pathname === '/Home' ? 'isActive' : 'isHeader_right_menu' }} to="/Home">Home</NavLink>
+        <NavLink className={({ isActive }) => { return pathname === '/Charities' ? 'isActive' : 'isHeader_right_menu' }} to="/Charities">Charities</NavLink>
+        {/* <NavLink className={({ isActive }) => { return pathname === '/AboutUs' ? 'isActive' : 'isHeader_right_menu' }} to="/AboutUs">About Us</NavLink> */}
+        <NavLink className={({ isActive }) => { return pathname === '/QA' ? 'isActive' : 'isHeader_right_menu' }} to="/QA">Calculator</NavLink>
+        <NavLink className={({ isActive }) => { return pathname === '/Disasters' ? 'isActive' : 'isHeader_right_menu' }} to="/Disasters">Disasters</NavLink>
       </div>
-
       <Outlet />
     </div>
   )

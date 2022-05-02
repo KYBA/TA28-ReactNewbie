@@ -1,49 +1,51 @@
-import { baseURL } from "./api";
-import lodash from "lodash";
+import { baseURL,apiBaseUrl } from "./api";
+// import lodash from "lodash";
 import { axios } from '../utils/axios'
 
 /**
  * 获取活动列表
  * @param {Object} params
- * @param {string} params.category
- * @param {string} params.location
+ * @param {string} params.yearLevel
+ * @param {string} params.state
+ * @param {string} params.size
+ * @param {string} params.keyword
  * @param {number} params.pageNum
  * @param {number} params.pageSize
  * @returns Promise
  */
 export const getActivities = (params) => {
-  return axios.get(`${baseURL}/event/search`, { params })
+  return axios.get(`${apiBaseUrl}/charity/search`, { params })
 }
 
-export const categoryList = [
+export const yearLevelList = [
   {
     label: 'All',
-    value: 'All',
+    value: '',
     isCheck: false,
   },
   {
     label: '0 - 5 years',
-    value: '0 - 5 years',
+    value: '0-5',
     isCheck: false,
   },
   {
     label: '5 - 10 years',
-    value: '5 - 10 years',
+    value: '5-10',
     isCheck: false,
   },
   {
-    label: '10 - 15 years',
-    value: '10 - 15 years',
+    label: '10 - 20 years',
+    value: '10-20',
     isCheck: false,
   },
   {
     label: 'More than 20 years',
-    value: 'More than 20 years',
+    value: '20+',
     isCheck: false,
   },
 ]
 
-export const locationList = [
+export const stateList = [
   {
     label: 'All',
     value: '',
@@ -51,49 +53,49 @@ export const locationList = [
   },
   {
     label: 'Victoria',
-    value: 'Victoria',
+    value: 'VIC',
     isCheck: false,
   },
   {
     label: 'New South Wales',
-    value: 'New South Wales',
+    value: 'NSW',
     isCheck: false,
   },
   {
     label: 'Queensland',
-    value: 'Queensland',
+    value: 'QLD',
     isCheck: false,
   },
   {
     label: 'South Australia',
-    value: 'South Australia',
+    value: 'SA',
     isCheck: false,
   },
   {
     label: 'Western Australia',
-    value: 'Western Australia',
+    value: 'WA',
     isCheck: false,
   },
   {
     label: 'Australia Capital Territory',
-    value: 'Australia Capital Territory',
+    value: 'ACT',
     isCheck: false,
   },
   {
     label: 'Tasmania',
-    value: 'Tasmania',
+    value: 'TAS',
     isCheck: false,
   },
   {
     label: 'Northern Territory',
-    value: 'Northern Territory',
+    value: 'NT',
     isCheck: false,
   },
 
 
 ]
 
-export const timeList = [
+export const sizeList = [
   {
     label: 'All',
     value: 'All',

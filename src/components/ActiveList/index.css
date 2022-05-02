@@ -1,42 +1,81 @@
-
-
-.isList .left {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: 39px;
-  padding-top: 40px;
-  display: flex;
-  justify-content: space-between;
+.caleft {
+  margin-top: 0;
+  width: 70%;
+  position: relative;
+  margin-right: 100px;
+  margin-left: 120px;
 }
 
-.pageTwoBox {
-  margin-right: 20px;
-  min-height: 463px;
+.charityboxs {
+  margin-top: 40px;
+  max-width: 721px;
+  min-width: 500px;
+  min-height: 157px;
+  max-height: 180px;
+  display: flex;
   box-sizing: border-box;
 }
 
-.isImage {
-  /* min-width: 370px; */
-  /* max-width: 370px; */
-  min-width: 303px;
-  max-width: 370px;
-  min-height: 288px;
-  max-height: 288px;
-  margin-right: 32px;
-  margin-top: 30px;
+.listshadow {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.100345);
+  border-radius: 3px;
 }
 
-
-.gameText {
-  margin-top: 34px;
-  font-size: 16px;
-  color: #333333;
+.fz-16c {
+  font-family: 'Raleway';
+  font-style: normal;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1C1D1F;
 }
 
-.text {
-  margin-top: 25px;
-  font-size: 24px;
+.fz-16b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
 }
 
+.ml-26 {
+  margin-left: 26px;
+}
+
+.fz-16d {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1C1D1F;
+}
+
+.bot {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.isSpot {
+  width: 6px;
+  height: 6px;
+  background: url('../../assets/images/divider.jpg');
+  background-size: cover;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mb-16{
+  margin-bottom: 16px;
+}

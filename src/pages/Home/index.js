@@ -12,8 +12,14 @@ export default function Home() {
     navigate('/Charities')
   }
 
+  const goCalculator = () => {
+    navigate('/QA')
+  }
+
   console.log('@@@', useOutlet())
   const [sum, setSum] = React.useState(1)
+
+
   return (
     <div className='container'>
       {/* 头部 */}
@@ -31,7 +37,7 @@ export default function Home() {
             <h1 className='fz-64w'>community.</h1>
             <div className='mt-40Text'>Australia has always been a country prone to natural disasters, with many people displaced by the effects of natural disasters. Chario hopes to provide enough information to help both donors and victims.</div>
           </div>
-          <div className='isRight_btn' onClick={goCharities}>Help now</div>
+          <div className='isRight_btn cli' onClick={goCharities}>Help now</div>
         </div>
         <div className='isOneRoundArr'></div>
         <div className='isGreenBox'></div>
@@ -45,8 +51,8 @@ export default function Home() {
           <div className='fz-16g'>OUR SOLUTIONS</div>
           <h1 className='fz-48'>What informations will Chario offer to you？</h1>
           <div className='mt-32Text fz-16 colorBlack'>
-          Chario is a website focused on helping victims of natural disasters in Australia. It can help donors find legitimate charities to do their part and also help victims find the relief programs they can get help with.          </div>
-          <div className='isBtn' onClick={goCharities}>Join now!</div>
+          Chario is a website focused on helping victims of natural disasters in Australia. It helps donors to see the impact that a donation could make. </div>
+          <div className='isBtn cli' onClick={goCalculator}>Try now</div>
           {/* <NavLink className='isBtn' to="/activites">Join now!</NavLink> */}
         </div>
 
@@ -56,8 +62,8 @@ export default function Home() {
           <div className='isCenter_right_leftItem'>
             <div className='isCenter_right_item bgShadow '>
               <img className='isIcon isNoMt' src={require("../../assets/images/leftone.png")} />
-              <h2 className='mt-32 fz-24 fm-raleway'>About us</h2>
-              <div className='mt-30Text fz-16 colorBlack lh150'>Integrate information from official charities to help donors avoid scams and help victims of natural disasters get quickly support.</div>
+              <h2 className='mt-32 fz-24 fm-raleway'>How Chario helps</h2>
+              <div className='mt-30Text fz-16 colorBlack lh150'>We provide an integrated data resource to allow both donors and recipients to find charities that they can trust in emergency situations.</div>
             </div>
             <div className='isCenter_right_item'>
               <img className='isIcon isNoMt' src={require("../../assets/images/lefttwo.png")} />
@@ -69,7 +75,7 @@ export default function Home() {
           <div className='isCenter_right_rightItem '>
             <div className='isCenter_right_item isCenter_right_itemR'>
               <img className='isIcon isNoMt' src={require("../../assets/images/rightone.png")} />
-              <h2 className='mt-32 fz-24 fm-raleway'>Disaster infos</h2>
+              <h2 className='mt-32 fz-24 fm-raleway'>Disasters</h2>
               <div className='mt-30Text fz-16 colorBlack lh150'>Information on natural disasters that frequently occur in Australia as well as recent specific disasters.</div>
             </div>
             <div className='isCenter_right_item'>

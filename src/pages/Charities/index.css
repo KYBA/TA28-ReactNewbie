@@ -3,6 +3,10 @@
   overflow: hidden;
 }
 
+.ml-at {
+  margin: 0 auto; 
+}
+
 .header {
   max-width: 80%;
   padding-right: 90px;
@@ -51,8 +55,9 @@
   background: url('../../assets/images/roundArrBg.png');
   position: absolute;
   background-size: cover;
-  right: -240px;
-  top: 100px;
+  right: -50px;
+  top: 1346px;
+  z-index: 1;
   /* bottom: -63px; */
 }
 
@@ -71,7 +76,7 @@
 .header .left {
   padding-top: 115px;
   padding-left: 134px;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 .header .header_img {
@@ -88,6 +93,17 @@
 }
 
 .fz-64 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 86px;
+  /* or 134% */
+
+  color: #ffffff;
+}
+
+.fz-64z {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -120,7 +136,7 @@
 }
 
 .isSearch {
-  margin-top: 122px;
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,7 +150,7 @@
 }
 
 .isSearch .title {
-  margin-top: 53px;
+  margin-top: 24px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -151,7 +167,7 @@
 }
 
 .isSearch .isIpt {
-  margin-top: 37px;
+  margin-top: 24px;
   display: flex;
   height: 56px;
 }
@@ -179,59 +195,44 @@
 }
 
 .isList {
-  width: 100%;
-  margin-top: 26px;
-  min-height: 1200px;
+  min-height: 1400px;
+  width: 1440px;
   display: flex;
-  padding-left: 192px;
 }
 
-.isList .left {
-  width: 60%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* margin-right: 150px; */
-  /* padding-left: 200px; */
-  padding-top: 40px;
+.caleft {
+  margin-top: 0;
+  width: 70%;
+  position: relative;
+  margin-right: 100px;
+  margin-left: 120px;
 }
 
-.pageTwoBox {
-  flex: 1;
-  margin-right: 20px;
-  min-height: 463px;
+.charityboxs {
+  margin-top: 40px;
+  max-width: 721px;
+  min-width: 500px;
+  min-height: 157px;
+  max-height: 200px;
+  display: flex;
   box-sizing: border-box;
 }
 
-
-.isImage {
-  min-width: 280px;
-  max-width: 280px;
-  min-height: 288px;
-  max-height: 288px;
-  margin-right: 32px;
-  margin-top: 30px;
-}
-
-.messageT {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 34px;
-  max-width: 300px;
-  margin-top: 20px;
-  color: #666666;
+.listshadow {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.100345);
+  border-radius: 3px;
 }
 
 .isList .right {
-  /* width: 30%; */
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  margin-right: 400px;
   min-width: 372px;
   max-width: 372px;
-  min-height: 397px;
-  /* max-height: 397px; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-right: 150px;
 }
 
 .isList .right .box1 {
@@ -393,4 +394,61 @@
   font-size: 13px;
   line-height: 24px;
   color: rgba(51, 51, 51, 0.83);
+}
+
+/* {charityBox} */
+.fz-16c {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1C1D1F;
+}
+
+.fz-16b {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
+
+.ml-26 {
+  margin-left: 26px;
+}
+
+.fz-16d {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #1C1D1F;
+}
+
+.bot {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.isSpot {
+  width: 6px;
+  height: 6px;
+  background: url('../../assets/images/divider.jpg');
+  background-size: cover;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mb-16{
+  margin-bottom: 16px;
 }

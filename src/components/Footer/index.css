@@ -1,10 +1,9 @@
 .footer {
-  margin-top: 100px;
+  margin-top: 40px;
   display: flex;
-
   box-sizing: border-box;
   background-color: rgb(57, 154, 137);
-  padding: 96px 0 86px 282px;
+  padding: 80px 0 86px 282px;
 }
 
 .ml-100 {
@@ -14,7 +13,6 @@
 
 .mt-38 {
   margin-top: 38px;
-  cursor: pointer;
   color: white;
 }
 .isSetBgGreen {
@@ -30,7 +28,6 @@
 }
 
 .ft_btn {
-  cursor: pointer;
   width: 42px;
   height: 42px;
   line-height: 42px;
@@ -38,6 +35,7 @@
   background-color: #fca100;
   border-radius: 50%;
   margin-right: 17px;
+  cursor: pointer;
 }
 
 

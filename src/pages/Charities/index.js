@@ -1,12 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import debounce from "lodash/debounce";
 import './index.css'
+import { Pagination } from 'antd';
+// import '/Users/james/Desktop/TA28-FrontEnd/src/components/ActiveList/index.css'
 import {
   getActivities,
-  categoryList,
-  timeList,
-  locationList,
-
+  yearLevelList,
+  sizeList,
+  stateList,
 } from '../../services/activities'
 import { apiBaseUrl } from '../../services/api';
 import ActiveList from '../../components/ActiveList'
@@ -19,88 +20,120 @@ export default function Activites() {
   const [activities, setActivities] = useState([])
   const [pageNum, setPageNum] = useState(1)
   const [totalPage, setTotalPage] = useState(1)
-  const [timeListEnum, setTimeListEnum] = useState(timeList)
-  const [locationListEnum, setlocationListEnum] = useState(locationList)
-  const [categoryListEnum, setcategoryListEnum] = useState(categoryList)
+  const [total, setTotal] = useState(1)
+  const [yearLevelListEnum, setyearLevelListEnum] = useState(yearLevelList)
+  const [stateListEnum, setstateListEnum] = useState(stateList)
+  const [sizeListEnum, setsizeListEnum] = useState(sizeList)
 
 
-  const handelChange = (e) => {
-    setSearchValue(e.target.value)
+  const handelChange = (value) => {
+    setSearchValue(value.target.value)
   }
 
-  const setTimeCheck = (value) => {
-    let list = timeListEnum.map(v => {
+  const setyearCheck = (value) => {
+    let list = yearLevelListEnum.map(v => {
       v.isCheck = false;
       if (v.value === value) {
         v.isCheck = true;
       }
       return v;
     })
-    setPageNum(1)
-    setTimeListEnum(list)
+    // setPageNum(1)
+    setyearLevelListEnum(list)
     handleEventSearch()
   }
 
-  const setLocationCheck = (value) => {
-    let list = locationListEnum.map(v => {
+  const setstateCheck = (value) => {
+    let list = stateListEnum.map(v => {
       v.isCheck = false;
       if (v.value === value) {
         v.isCheck = true;
       }
       return v;
     })
-    setPageNum(1)
-    setlocationListEnum(list)
+    // setPageNum(1)
+    setstateListEnum(list)
     handleEventSearch()
   }
 
-  const setCategoryListCheck = (value) => {
-    let list = categoryListEnum.map(v => {
+  const setsizeListCheck = (value) => {
+    let list = sizeListEnum.map(v => {
       v.isCheck = false;
       if (v.value === value) {
         v.isCheck = true;
       }
       return v;
     })
-    setPageNum(1)
-    setcategoryListEnum(list)
+    // setPageNum(1)
+    setsizeListEnum(list)
     handleEventSearch()
   }
 
   const setPageCheck = async (value) => {
-    setPageNum(value)
+    // setPageNum(value)
     handleEventSearch()
+  }
+  const onChangePagination = async (value,pageSize) => {
+    console.log(value)
+    setPageNum(value)
+    console.log(pageNum)
+    let size = sizeListEnum.find(item => item.isCheck === true)?.value || '';
+    let state = stateListEnum.find(item => item.isCheck === true)?.value;
+    let yearLevel = yearLevelListEnum.find(item => item.isCheck === true)?.value;
+    let params = {
+      size,
+      state,
+      yearLevel,
+      pageNum,
+      pageSize: pageSize
+    }
+    handleEventSearch(params)
   }
 
   const getParams = () => {
-    let category = categoryListEnum.find(item => item.isCheck === true)?.value || '';
-    let location = locationListEnum.find(item => item.isCheck === true)?.value;
-    let time = timeListEnum.find(item => item.isCheck === true)?.value;
+    let size = sizeListEnum.find(item => item.isCheck === true)?.value || '';
+    let state = stateListEnum.find(item => item.isCheck === true)?.value;
+    let yearLevel = yearLevelListEnum.find(item => item.isCheck === true)?.value;
     let params = {
-      category,
-      location,
-      time,
+      size,
+      state,
+      yearLevel,
       pageNum,
-      pageSize: 8
+      pageSize: 10
     }
     return params
   }
 
   const handleGetActivities = async (params) => {
-    let res = await getActivities(getParams(params))
+    console.log(params)
+    let size = sizeListEnum.find(item => item.isCheck === true)?.value || '';
+    let state = stateListEnum.find(item => item.isCheck === true)?.value;
+    let yearLevel = yearLevelListEnum.find(item => item.isCheck === true)?.value;
+    let defeultparams = {
+      size,
+      state,
+      yearLevel,
+      pageNum,
+      pageSize: 10
+    }
+    let res = await getActivities(params==undefined?defeultparams:params)
+    console.log(res)
     let data = res?.data?.data?.list.map((item) => {
       return {
         ...item,
         eventImagePath: `${apiBaseUrl}/images/${item.eventImagePath}`,
       }
     })
-    setTotalPage(res?.data?.data?.totalPage || 1)
+    setTotalPage(res?.data?.data?.totalPage)
+    setTotal(res?.data?.data?.total)
     return data ?? [];
   }
 
   const handleEventSearch = async (val) => {
+    console.log(val)
     let data = await handleGetActivities(val)
     setActivities(data ?? []);
+    console.log(data)
   }
 
   useEffect(() => {
@@ -109,19 +142,21 @@ export default function Activites() {
 
   return (
     <div className='container'>
+    <div className='sevenroundArrBg'></div>
       {/* 头部 */}
       <div className="header">
         <div className='fiveroundArrBg'></div>
         <div className='sixroundArrBg'></div>
         <div className='left'>
-          <div className='fz-64'>Find the charity that suits your needs</div>
+          <div className='fz-64z'>Find the charity that suits your needs</div>
           <div className='mt-31 fz-16'>It may be difficult for you to choose a legitimate and appropriate charity 
           to help those disaster affected victims.
-           But we will provide you with a list of legally registered charities, whether you want to filter by region, 
-           time of existance or size, you can find what you need on this page. Of course, 
-           if you already have a vague goal in mind, you can also search the keywords to find your favorite charity.</div>
+          But we will provide you with a list of legally registered charities, whether you want to filter by region, 
+          year of existance or size, you can find what you need on this page. Of course, 
+          if you already have a vague goal in mind, you can also search the keywords to find your favorite charity.</div>
         </div>
-        <img alt="" className='header_img' src={require('../../assets/images/PageCharity.jpg')} />
+
+        <img alt="" className='header_img' src={require('../../assets/images/chairtypic.jpg')} />
       </div>
 
       {/* 搜索区域 */}
@@ -132,9 +167,9 @@ export default function Activites() {
           <input
             onChange={handelChange}
             defaultValue={searchValue}
-            className='ipt'
+            className='ipt fz-24'
             type="text"
-            placeholder='search'
+            placeholder='keyword'
           />
           <div
             className='btn'
@@ -145,86 +180,14 @@ export default function Activites() {
       </div> */}
 
       {/* list 列表加搜索 */}
-      <div className='isList' >
+      <div className='isList ml-at' >
         <ActiveList childRef={childRef} activities={activities} />
         <div className="right">
           <div className='isRightTitle mt-62 box1'>
-            <div className='fz-24'>Time of existance</div>
-            <div>
-              {
-                categoryListEnum.map((item, index) => {
-                  return (
-                    <div key={item.value}>
-                      {
-                        item.parent ?
-                          <div className='son'>
-                            <div className='mt-44AndRound isMt-21'>
-                              <div className='isChildrenText'>{item.label}</div>
-                              <div
-                                className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                                onClick={() => setCategoryListCheck(item.value)}>
-                              </div>
-                            </div>
-                          </div>
-                          :
-                          <div className='mt-44AndRound isMt-21'>
-                            <div>{item.label}</div>
-                            <div
-                              className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                              onClick={() => setCategoryListCheck(item.value)}>
-                            </div>
-                          </div>
-                      }
-                    </div>
-
-                  )
-                })
-              }
-            </div>
-          </div>
-
-          <div className='isRightTitle box2  isHaveRoundBg'>
-            <div className='fz-24'>States & Territories</div>
-            <div>
-              {
-                locationListEnum.map((item, index) => {
-                  return (
-                    <div key={item.value}>
-                      {
-                        item.parent ?
-                          <div className='son'>
-                            <div className='mt-44AndRound isMt-21'>
-                              <div className='isChildrenText'>{item.label}</div>
-                              <div
-                                className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                                onClick={() => setLocationCheck(item.value)}>
-                              </div>
-                            </div>
-                          </div>
-                          :
-                          <div className='mt-44AndRound isMt-21'>
-                            <div>{item.label}</div>
-                            <div
-                              className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                              onClick={() => setLocationCheck(item.value)}>
-                            </div>
-                          </div>
-                      }
-                    </div>
-
-                  )
-                })
-              }
-            </div>
-
-            <div className='sevenroundArrBg'></div>
-          </div>
-
-          <div className='isRightTitle box3 isHaveRoundBg'>
             <div className='fz-24'>Size of charities</div>
             <div>
               {
-                timeListEnum.map((item, index) => {
+                sizeListEnum.map((item, index) => {
                   return (
                     <div key={item.value}>
                       {
@@ -234,7 +197,7 @@ export default function Activites() {
                               <div className='isChildrenText'>{item.label}</div>
                               <div
                                 className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                                onClick={() => setTimeCheck(item.value)}>
+                                onClick={() => setsizeListCheck(item.value)}>
                               </div>
                             </div>
                           </div>
@@ -243,7 +206,81 @@ export default function Activites() {
                             <div>{item.label}</div>
                             <div
                               className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
-                              onClick={() => setTimeCheck(item.value)}>
+                              onClick={() => setsizeListCheck(item.value)}>
+                            </div>
+                          </div>
+                      }
+                    </div>
+
+                  )
+                })
+              }
+            </div>
+          </div>
+
+          <div className='isRightTitle box2 isHaveRoundBg'>
+            <div className='fz-24'>States & Territories</div>
+            <div>
+              {
+                stateListEnum.map((item, index) => {
+                  return (
+                    <div key={item.value}>
+                      {
+                        item.parent ?
+                          <div className='son'>
+                            <div className='mt-44AndRound isMt-21'>
+                              <div className='isChildrenText'>{item.label}</div>
+                              <div
+                                className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                                onClick={() => setstateCheck(item.value)}>
+                              </div>
+                            </div>
+                          </div>
+                          :
+                          <div className='mt-44AndRound isMt-21'>
+                            <div>{item.label}</div>
+                            <div
+                              className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                              onClick={() => setstateCheck(item.value)}>
+                            </div>
+                          </div>
+                      }
+                    </div>
+
+                  )
+                })
+              }
+            </div>
+
+            
+          </div>
+
+        
+
+          <div className='isRightTitle box3 isHaveRoundBg'>
+            <div className='fz-24'>Year of existance</div>
+            <div>
+              {
+                yearLevelListEnum.map((item, index) => {
+                  return (
+                    <div key={item.value}>
+                      {
+                        item.parent ?
+                          <div className='son'>
+                            <div className='mt-44AndRound isMt-21'>
+                              <div className='isChildrenText'>{item.label}</div>
+                              <div
+                                className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                                onClick={() => setyearCheck(item.value)}>
+                              </div>
+                            </div>
+                          </div>
+                          :
+                          <div className='mt-44AndRound isMt-21'>
+                            <div>{item.label}</div>
+                            <div
+                              className={item.isCheck ? 'isCheck isRound' : 'isRound isGard'}
+                              onClick={() => setyearCheck(item.value)}>
                             </div>
                           </div>
                       }
@@ -258,15 +295,17 @@ export default function Activites() {
         </div>
       </div>
 
-
+      <div className="App">
+  </div>
       {/* 底部切换分页 */}
       <div className='isPage isHaveRoundBg'>
-        <div className='eightroundArrBg'></div>
+      <Pagination defaultCurrent={pageNum} total={total} onChange={onChangePagination} />
+        {/* <div className='eightroundArrBg'></div>
         {
           [...Array(totalPage)].map((item, index) => {
 
             let curPage = index + 1;
-            let key = Math.random().toFixed(6) + index;
+            let key = Math.random().toFixed(10) + index;
             return (
               <div
                 key={key}
@@ -275,7 +314,7 @@ export default function Activites() {
               > {curPage}</div>
             )
           })
-        }
+        } */}
 
       </div>
     </div >

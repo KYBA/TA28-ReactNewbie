@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-div {
+.cli {
   cursor: pointer;
 }
 
@@ -42,7 +42,6 @@ div {
 
 .isMain {
   display: flex;
-  margin-top: 30px;
   /* background-color: green; */
   min-height: 687px;
   max-height: 687px;
@@ -53,10 +52,10 @@ div {
   width: 118px;
   height: 118px;
   background: url('../../assets/images/roundArrBg.png');
-  position: relative;
+  position: absolute;
   background-size: cover;
   left: 580px;
-  top: 780px;
+  top: 745px;
   z-index: -1;
 }
 
@@ -122,6 +121,7 @@ div {
 .fz-48 {
   font-family: 'Raleway';
   font-style: normal;
+  font-weight: 700;
   font-size: 48px;
   line-height: 48px;
 }
@@ -171,6 +171,7 @@ div {
   line-height: 55px;
   text-align: center;
   color: #ffffff;
+  border-radius: 8px;
   background-color: #1f6256;
 }
 

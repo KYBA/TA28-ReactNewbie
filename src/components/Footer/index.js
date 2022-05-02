@@ -4,6 +4,7 @@ import { Navigate, NavLink, Outlet, useOutlet, Link, useLocation } from 'react-r
 import './index.css'
 
 
+
 export default function Header() {
   const { pathname } = useLocation()
 
@@ -14,6 +15,7 @@ export default function Header() {
   function go() {
     navigate(1)
   }
+  
   return (
     <div className="footer">
     <div>
@@ -35,8 +37,8 @@ export default function Header() {
     </div>
 
     <div className='ml-100'>
-      <dl className='footer_btn'>
-      <dt className='mt-38'>Our Website Designer</dt>
+      <div className='footer_btn'>
+      <div className='mt-38'>Our Website Designer</div>
         <div className='btnArr mt-38'>
           <div className='ft_btn'>YW</div>
           <div className='ft_btn'>YL</div>
@@ -44,8 +46,8 @@ export default function Header() {
           <div className='ft_btn'>DW</div>
           <div className='ft_btn'>AP</div>
         </div>
-          <div className=''>version 4.24</div>
-      </dl>
+          {/* <div className=''>version 5.1</div> */}
+      </div>
 
     </div>
   </div>
