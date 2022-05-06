@@ -13,7 +13,10 @@ export default function Home() {
   }
 
   const goCalculator = () => {
-    navigate('/QA')
+    navigate('/QA');
+    window.scrollTo({
+      top:0,
+    });
   }
 
   console.log('@@@', useOutlet())
@@ -63,12 +66,12 @@ export default function Home() {
             <div className='isCenter_right_item bgShadow '>
               <img className='isIcon isNoMt' src={require("../../assets/images/leftone.png")} />
               <h2 className='mt-32 fz-24 fm-raleway'>How Chario helps</h2>
-              <div className='mt-30Text fz-16 colorBlack lh150'>We provide an integrated data resource to allow both donors and recipients to find charities that they can trust in emergency situations.</div>
+              <div className='mt-30Text fz-16 colorBlack lh150 pr-10'>We provide an integrated data resource to allow both donors <br></br>and recipients to find charities that they can trust in emergency situations.</div>
             </div>
             <div className='isCenter_right_item'>
               <img className='isIcon isNoMt' src={require("../../assets/images/lefttwo.png")} />
               <h2 className='mt-32 fz-24 fm-raleway'>Charities</h2>
-              <div className='mt-30Text fz-16 colorBlack lh150'>Australia official registered charities focus on providing assistance programs to victims of natural disasters.</div>
+              <div className='mt-30Text fz-16 colorBlack lh150'>Australia official registered charities focus on providing assistance programs to <br></br>victims of natural disasters.</div>
             </div>
           </div>
           {/* 中间的右侧的右侧部分 */}
@@ -78,7 +81,7 @@ export default function Home() {
               <h2 className='mt-32 fz-24 fm-raleway'>Disasters</h2>
               <div className='mt-30Text fz-16 colorBlack lh150'>Information on natural disasters that frequently occur in Australia as well as recent specific disasters.</div>
             </div>
-            <div className='isCenter_right_item'>
+            <div className='isCenter_right_item bgShadow'>
               <img className='isIcon isNoMt' src={require("../../assets/images/righttwo.png")} />
               <h2 className='mt-32 fz-24 colorBlack fm-raleway'>More...</h2>
               <div className='mt-30Text fz-16 colorBlack lh150'>As a public service website to provide infomations to help the community.</div>

@@ -11,6 +11,7 @@
   max-width: 55%;
   min-width: 335px;
   align-items: center;
+  cursor: pointer;
 }
 .isHeader_left .isLogo {
   margin-right:30px;

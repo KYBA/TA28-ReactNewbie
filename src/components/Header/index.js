@@ -14,10 +14,15 @@ export default function Header() {
   function go() {
     navigate(1)
   }
+
+  const goHomepage = () => {
+    navigate('/Homepage')
+  }
+
   return (
     <div className='isHeader'>
 
-      <div className='isHeader_left'>
+      <div className='isHeader_left' onClick={goHomepage}>
         <div className='isLogo'></div>
         <div className='LoginName'>Chario.</div>
       </div>

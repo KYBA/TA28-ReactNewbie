@@ -27,7 +27,7 @@ export default function SwiperItem() {
       </SwiperSlide>
       <SwiperSlide>
         <div className='box'>
-          <img className='isImageT' src={require('../../assets/images/bushfire.jpg')} alt="" />
+          <img className='isImageT' src={require('../../assets/images/Bushfire.jpg')} alt="" />
           <div className='text fz-24 fm-raleway'>Bushfire</div>
         </div>
       </SwiperSlide>

@@ -142,7 +142,6 @@ export default function Activites() {
 
   return (
     <div className='container'>
-    <div className='sevenroundArrBg'></div>
       {/* 头部 */}
       <div className="header">
         <div className='fiveroundArrBg'></div>

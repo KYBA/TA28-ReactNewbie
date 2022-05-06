@@ -20,6 +20,10 @@
   margin-top: 32px;
 }
 
+.pr-10{
+  padding-right: 10px;
+}
+
 .mt-32Text {
   margin-top: 32px;
   color: #666666;
@@ -36,7 +40,7 @@
 }
 
 .mt-30Text {
-  margin-top: 30px;
+  margin-top: 10px;
   color: #666666;
 }
 
@@ -100,7 +104,7 @@
   flex-direction: column;
   box-sizing: border-box;
   margin-left: 120px;
-  margin-top: 170px;
+  margin-top: 60px;
   /* padding-right: 90px; */
   min-width: 650px;
   position: relative;
