@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import debounce from "lodash/debounce";
 import './index.css'
 import { Pagination } from 'antd';
-// import '/Users/james/Desktop/TA28-FrontEnd/src/components/ActiveList/index.css'
 import {
   getActivities,
   yearLevelList,
@@ -16,7 +14,7 @@ export default function Activites() {
 
   const childRef = useRef(); //关键部分
 
-  const [searchValue, setSearchValue] = useState('')
+  // const [searchValue, setSearchValue] = useState('')
   const [activities, setActivities] = useState([])
   const [pageNum, setPageNum] = useState(1)
   const [totalPage, setTotalPage] = useState(1)
@@ -26,9 +24,9 @@ export default function Activites() {
   const [sizeListEnum, setsizeListEnum] = useState(sizeList)
 
 
-  const handelChange = (value) => {
-    setSearchValue(value.target.value)
-  }
+  // const handelChange = (value) => {
+  //   setSearchValue(value.target.value)
+  // }
 
   const setyearCheck = (value) => {
     let list = yearLevelListEnum.map(v => {
@@ -69,10 +67,10 @@ export default function Activites() {
     handleEventSearch()
   }
 
-  const setPageCheck = async (value) => {
-    // setPageNum(value)
-    handleEventSearch()
-  }
+  // const setPageCheck = async (value) => {
+  //   // setPageNum(value)
+  //   handleEventSearch()
+  // }
   const onChangePagination = async (value,pageSize) => {
     console.log(value)
     setPageNum(value)
@@ -90,19 +88,19 @@ export default function Activites() {
     handleEventSearch(params)
   }
 
-  const getParams = () => {
-    let size = sizeListEnum.find(item => item.isCheck === true)?.value || '';
-    let state = stateListEnum.find(item => item.isCheck === true)?.value;
-    let yearLevel = yearLevelListEnum.find(item => item.isCheck === true)?.value;
-    let params = {
-      size,
-      state,
-      yearLevel,
-      pageNum,
-      pageSize: 10
-    }
-    return params
-  }
+  // const getParams = () => {
+  //   let size = sizeListEnum.find(item => item.isCheck === true)?.value || '';
+  //   let state = stateListEnum.find(item => item.isCheck === true)?.value;
+  //   let yearLevel = yearLevelListEnum.find(item => item.isCheck === true)?.value;
+  //   let params = {
+  //     size,
+  //     state,
+  //     yearLevel,
+  //     pageNum,
+  //     pageSize: 10
+  //   }
+  //   return params
+  // }
 
   const handleGetActivities = async (params) => {
     console.log(params)
@@ -148,7 +146,7 @@ export default function Activites() {
         <div className='sixroundArrBg'></div>
         <div className='left'>
           <div className='fz-64z'>Find the charity that suits your needs</div>
-          <div className='mt-31 fz-16'>It may be difficult for you to choose a legitimate and appropriate charity 
+          <div className='mt-31 fz-16w'>It may be difficult for you to choose a legitimate and appropriate charity 
           to help those disaster affected victims.
           But we will provide you with a list of legally registered charities, whether you want to filter by region, 
           year of existance or size, you can find what you need on this page. Of course, 

@@ -1,2 +1,2 @@
-export const apiBaseUrl = 'https://ta28-bootback.azurewebsites.net';
+export const apiBaseUrl = 'https://chario-web.azurewebsites.net';
 export const baseURL = process.env.NODE_ENV === 'production' ? apiBaseUrl : '/api';

@@ -1,4 +1,4 @@
-import { baseURL,apiBaseUrl } from "./api";
+import { apiBaseUrl } from "./api";
 // import lodash from "lodash";
 import { axios } from '../utils/axios'
 

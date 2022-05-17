@@ -1,0 +1,12 @@
+.donutchart1{
+    width: 184px;
+    height: 184px;
+    background-color:#FCA100 ;
+    border-radius: 50%;
+}
+
+.questionbox{
+    width: 918px;
+    margin-top: 40px;
+    /* border-style: double; */
+}

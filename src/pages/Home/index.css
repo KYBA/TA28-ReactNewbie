@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+
+.hpcontainer {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .cli {
   cursor: pointer;
 }
@@ -32,10 +38,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
-
-  /* Text/Body Text */
-
   color: #666666;
 }
 
@@ -56,11 +58,7 @@
   width: 118px;
   height: 118px;
   background: url('../../assets/images/roundArrBg.png');
-  position: absolute;
   background-size: cover;
-  left: 580px;
-  top: 745px;
-  z-index: -1;
 }
 
 .tworoundArrBg {
@@ -69,7 +67,7 @@
   background: url('../../assets/images/roundArrBg.png');
   position: absolute;
   background-size: cover;
-  top: 213px;
+  top: 200px;
   right: -53px;
 }
 
@@ -114,7 +112,7 @@
   margin-top: 40px;
 }
 
-.fz-64w {
+.fz-64 {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -128,6 +126,14 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
+}
+
+.fz-40z {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
 }
 
 .mt-40Text {
@@ -145,7 +151,11 @@
 }
 
 .fz-16 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 150%;
 }
 .colorBlack {
   color: #333333 !important;
@@ -157,10 +167,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  /* or 24px */
-
-  /* Text/Body Text */
-
   color: #666666;
 }
 .fz-24 {
@@ -168,9 +174,9 @@
 }
 
 .isRight .isRight_btn {
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 37px;
-  width: 204px;
+  width: 154px;
   height: 55px;
   line-height: 55px;
   text-align: center;
@@ -196,28 +202,23 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  /* identical to box height, or 24px */
-
   letter-spacing: 0.1em;
-
-  /* Text/Body Text */
-
   color: #666666;
 }
-.container .isMain {
+.isMain {
   position: relative;
   overflow: hidden;
 }
 
-.container .isCenter {
+.isCenter {
   box-sizing: border-box;
   padding-right: 90px;
-  margin-top: 233px;
-  padding-left: 210px;
+  margin-top: 40px;
+  padding-left: 165px;
   display: flex;
   box-sizing: border-box;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .bgShadow {
   background: #ffffff;
@@ -227,7 +228,7 @@
 .isCenter_left {
   margin-top: 150px;
   /* max-width: 50%; */
-  max-width: 40%;
+  max-width: 438px;
 }
 
 .isCenter_left .isBtn {
@@ -242,7 +243,7 @@
 }
 
 .isCenter_right {
-  margin-left: 70px;
+  margin-left: 82px;
   min-width: 413px;
   display: flex;
   max-width: 40%;
@@ -257,7 +258,11 @@
   height: 328px;
   margin-right: 43px;
   padding-left: 28px;
-  padding-top: 44px;
+  padding-top: 30px;
+}
+
+.isCenter_right_item:hover{
+  box-shadow: 0px 25px 55px rgba(126, 126, 126, 0.35);
 }
 
 .isIcon {
@@ -281,23 +286,21 @@
 
 .isWaiting {
   height: 180px;
-  margin-top: 175px;
+  margin-top: 120px;
   display: flex;
   box-sizing: border-box;
 }
 
 .isWaiting .left {
-  padding-left: 269px;
+  padding-left: 260px;
 }
 
 .isWaiting .left .isWaitingText {
-  font-size: 48px;
-  font-weight: 700px;
+  font-size: 40px;
   margin-top: 24px;
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
   line-height: 64px;
   /* identical to box height, or 133% */
   font-feature-settings: 'pnum' on, 'lnum' on;
@@ -319,14 +322,14 @@
 }
 
 .isImpact{
-  margin-top: 175px;
+  margin-top: 120px;
   display: flex;
   box-sizing: border-box;
 }
 
 
 .isImpact .left{
-  margin-left: 200px;
+  margin-left: 165px;
   width: 400px;
 }
 
@@ -334,7 +337,7 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  margin-left: 120px;
+  margin-left: 140px;
   /* padding-right: 90px; */
   width: 40%;
   position: relative;
@@ -356,11 +359,9 @@
 }
 
 .isGroup{
-  max-width: 136px;
+  width: 136px;
   height: 96px;
 }
-
-
 
 .fz-14{
   font-family: 'Roboto';
@@ -382,3 +383,4 @@
 .mt-24 {
   margin-top: 24px;
 }
+

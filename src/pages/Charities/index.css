@@ -19,6 +19,7 @@
   box-sizing: border-box;
   position: relative;
 }
+
 .fz-48T {
   margin-top: 54px;
   font-size: 48px;
@@ -92,17 +93,6 @@
   max-height: 562px;
 }
 
-.fz-64 {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 86px;
-  /* or 134% */
-
-  color: #ffffff;
-}
-
 .fz-64z {
   font-family: 'Raleway';
   font-style: normal;
@@ -114,16 +104,14 @@
   color: #ffffff;
 }
 
-.fz-16 {
+.fz-16w {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   /* or 24px */
-
   /* Background/Light Blue */
-
   color: #f7f6fe;
 }
 

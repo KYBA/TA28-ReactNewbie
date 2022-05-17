@@ -94,8 +94,5 @@
 .helpbtn{
     width: 84px;
     height: 28px;
-}
-
-.mt-24 {
-    margin-top: 24px;
+    cursor: pointer;
 }

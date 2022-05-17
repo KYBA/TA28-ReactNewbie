@@ -10,6 +10,11 @@
   margin-left: 100px;
 }
 
+.mt-20footer {
+  margin-top: 20px;
+  color: white;
+  cursor: pointer;
+}
 
 .mt-38 {
   margin-top: 38px;
@@ -37,5 +42,3 @@
   margin-right: 17px;
   cursor: pointer;
 }
-
-

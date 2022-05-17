@@ -15,30 +15,74 @@ export default function Header() {
   function go() {
     navigate(1)
   }
+
+  const goQuiz = () => {
+    navigate('/Quiz');
+    window.scrollTo({
+      top:0,
+    });
+  }
+
+  const gohome = () => {
+    navigate('/home');
+    window.scrollTo({
+      top:0,
+    });
+  }
   
+  const gocharities = () => {
+    navigate('/charities');
+    window.scrollTo({
+      top:0,
+    });
+  }
+
+  const godisasters = () => {
+    navigate('/disasters');
+    window.scrollTo({
+      top:0,
+    });
+  }
+
+  const goCalculator = () => {
+    navigate('/Calculator');
+    window.scrollTo({
+      top:0,
+    });
+  }
+
+  const goeducation = () => {
+    navigate('/education');
+    window.scrollTo({
+      top:0,
+    });
+  }
+
+
   return (
     <div className="footer">
     <div>
       <dl>
-        <dt className='mt-38'>Company</dt>
-        <dt className='mt-38'>Monash University</dt>
-        <dt className='mt-38'>Contact Us</dt>
+        <dt className='mt-38' style={{fontWeight:"700"}}>Navigate</dt>
+        <dt className='mt-38' style={{cursor:'pointer'}} onClick={gohome}>Home</dt>
+        <dt className='mt-20footer' onClick={gocharities}>Charities</dt>
+        <dt className='mt-20footer' onClick={goCalculator}>Calculator</dt>
+        <dt className='mt-20footer' onClick={godisasters}>Disasters</dt>
+        <dt className='mt-20footer' onClick={goeducation}>Education</dt>
+        <dt className='mt-20footer' onClick={goQuiz}>Quiz</dt>
       </dl> 
     </div>
-
-
     <div className='ml-100'> 
       <dl>
-        <dt className='mt-38'>Data Support</dt>
-        <dt className='mt-38'>National Charities and Non-profit Commission (NCNC) </dt>
-        <dt className='mt-38'>Australian Charities and Not-for-profits Commission (ACNC) </dt>
-        <dt className='mt-38'>Australian Goverment/Department of Home Affairs</dt>
+        <dt className='mt-38' style={{fontWeight:"700"}}>Data Support</dt>
+        <dt className='mt-38' style={{cursor:'pointer'}} onClick={() => {window.open('https://www.acnc.gov.au/')}} >Australian Charities and Not-for-profits Commission (ACNC) </dt>
+        <dt className='mt-38' style={{cursor:'pointer'}} onClick={() => {window.open('https://www.homeaffairs.gov.au/')}} >Australian Goverment/Department of Home Affairs</dt>
       </dl>
     </div>
 
     <div className='ml-100'>
       <div className='footer_btn'>
-      <div className='mt-38'>Our Website Designer</div>
+      <div className='mt-38' style={{fontWeight:"700"}}>Our Website Designer</div>
         <div className='btnArr mt-38'>
           <div className='ft_btn'>YW</div>
           <div className='ft_btn'>YL</div>
@@ -46,9 +90,8 @@ export default function Header() {
           <div className='ft_btn'>DW</div>
           <div className='ft_btn'>AP</div>
         </div>
-          {/* <div className=''>version 5.1</div> */}
+        <div className='mt-38'>  Copyright© 2022 DAY3 Group </div> 
       </div>
-
     </div>
   </div>
   )

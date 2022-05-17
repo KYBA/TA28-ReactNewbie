@@ -11,7 +11,6 @@ export default function SwiperItem() {
       slidesPerView={4}
       spaceBetween={30}
       loop={true}
-      navigation={true}
       centeredSlides={false}
       pagination={{
         clickable: true,

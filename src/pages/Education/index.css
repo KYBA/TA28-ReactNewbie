@@ -1,0 +1,231 @@
+.ml-at {
+    margin: 0 auto; 
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.educontainer{
+    width: 1233px;
+}
+
+
+.eduheadbox{
+    display: flex;
+    flex-direction:row;
+}
+
+.eduleftbox{
+    width: 433px;
+}
+
+.edudisbox{
+    width: 1091px;
+    height: 920px;
+}
+
+.edudis8{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0px 2px 30px rgba(0, 0, 142, 0.10449);
+}
+
+.fourth{
+    width:25%;
+    height:50%;
+}
+.fourth:hover{
+    box-shadow: 0px 25px 55px rgba(126, 126, 126, 0.35);
+}
+
+.picsize{
+    width: 272.75px;
+    height: 323.6px;
+}
+
+.fourth1{
+    width:25%;
+    height: 50%;
+    padding-left: 30px;
+    padding-top: 80px;
+    padding-right: 20px;
+}
+
+.fz-22poppins{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+}
+
+
+.edubdabox{
+    width: 1200px;
+    height: 800px;
+}
+
+.hover-green:hover{color:#1F6256!important}
+
+.selectbox{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.fz-24select {
+    font-size: 24px;
+  }
+
+
+.fz-24select:focus{
+    background-color: #e5e0e0;
+    border-radius: 8px;
+    opacity: 0.5;
+}
+
+.fz-40{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 64px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #333333;
+}
+
+
+
+.quizbox{
+    background-image: url("../../assets/images/quizbackcolor.jpg");
+    height: 233px;
+    width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+}
+
+.quizleft{
+    width: 733px;
+    margin-left: 60px;
+    padding-top: 40px;
+}
+
+.fz-32Inter{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    /* or 38px */
+    color: #FFFFFF;
+}
+
+.fz-24Inter{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    /* or 150% */
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+
+.infoarea{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.infoleftbox{
+    width: 50%;
+}
+
+.inforightbox{
+    width: 50%;
+}
+
+.infobox{
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    width: 550px;
+    box-shadow: 0px 2px 30px rgba(0, 0, 142, 0.10449);
+}
+
+
+.drop {
+    padding-top: 5px;
+    cursor: pointer;
+    display: block;
+    background: white;
+}
+
+.drop + input{
+    display:none; /* hide the checkboxes */
+}
+
+.drop + input + div{
+    display:none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+    margin-top: 20px;
+}
+
+.drop + input:checked + div{
+    display:block;
+}
+
+
+.drop1 {
+    padding-top: 5px;
+    cursor: pointer;
+    display: block;
+    background: white;
+}
+
+.drop1 + input{
+    display:none; /* hide the checkboxes */
+}
+
+.drop1 + input + div{
+    display:block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #999999;
+    margin-top: 20px;
+}
+
+.drop1 + input:checked + div{
+    display:none;
+}
+
+.headpic1{
+    height: 473px;
+    width: 215px;
+    margin-left: 66px;
+}
+
+.headpic1:hover{
+    box-shadow: 0px 25px 55px rgba(126, 126, 126, 0.35);
+}
+
+.headpic2:hover{
+box-shadow: 0px 25px 55px rgba(126, 126, 126, 0.35);
+}

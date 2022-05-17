@@ -87,31 +87,6 @@
   margin-right: 0;
 }
 
-.isWtkImage {
-  background: url(../../assets/images/wtk.jpg);
-  background-size: cover;
-}
-
-.isJokerImage {
-  background: url(../../assets/images/joker.jpg);
-  background-size: cover;
-}
-
-.isBadImage {
-  background: url(../../assets/images/badminton.jpg);
-  background-size: cover;
-  margin-right: 0;
-}
-
-.isMahImage {
-  background: url(../../assets/images/mahjong.jpg);
-  background-size: cover;
-}
-
-.isTabImage {
-  background: url(../../assets/images/tableTennis.jpg);
-  background-size: cover;
-}
 
 .gameText {
   margin-top: 38px;

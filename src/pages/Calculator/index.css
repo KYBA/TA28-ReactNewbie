@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.ml-at {
+    margin: 0 auto;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+
+
+.mt-80 {
+    margin-top: 80px;
+}
+
+
+.headbox {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.headleft {
+    width: 560px;
+}
+
+.img-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.w3-third {
+    width: 33.33%;
+}
+
+.headright {
+    width: 504px;
+    margin-left: 120px;
+}
+
+.pd-10 {
+    padding: 10px;
+}
+
+.fz-16{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    /* Text/Body Text */
+    color: #666666;
+}
+
+
+.calboxone{
+    width: 870px;
+    height: 403px;
+    margin: 0 auto;
+}
+
+.txtct {
+    text-align: center;
+}
+
+
+.fz-14grey{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* or 121% */
+    color: #6D6D6D;
+}
+
+.fz-17{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+    /* or 147% */
+    color: #382933;
+}
+
+.fz-18wh{
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.fz-28g{
+    font-family:'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    color: #1F6256;
+}
+
+.fz-48{
+    font-family:'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    /* identical to box height, or 108% */
+    color: #000000;
+}
+
+.fz-100{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 100px;
+    /* or 200% */
+    color: #319B88;
+    mix-blend-mode: normal;
+    opacity: 0.3;
+}
+
+.resbox0{
+    width: 452px;
+}
+
+.resbox1{
+    width: 452px;
+    height: 81px;
+    display: flex;
+}
+
+.resbox2{
+    height: 80px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.resbox3{
+    width: 753px;
+    height: 81px;
+    display: flex;
+}
+
+.chidbox1{
+    width:195px;
+}
+
+.chidbox2{
+    width:270px;
+    margin-left: 60px;
+}
+
+
+input::-ms-input-placeholder{
+    text-align: center;
+}
+input::-webkit-input-placeholder{
+    text-align: center;
+}
