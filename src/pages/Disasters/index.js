@@ -28,11 +28,9 @@ export default function Disasters() {
       <img className='img' src={require("../../assets/images/disfire.jpg")}/>
       {/* right */}
       <div className='ml-57'>
-        <div className='rightlil fz-12 mt-10'>
-          <div>EVENTS</div>
-          <div className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>6 December 2019</div>
-        </div>
-        <div className='mt-16 fz-32'>New South Wales bushfires: 'Mega blaze' warning near Sydney</div>
+        <div className='rightlil fz-12'>
+          <div>EVENTS<span className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>6 December 2019</span></div>      
+          <div className='mt-16 fz-32'>New South Wales bushfires: 'Mega blaze' warning near Sydney</div>
           <div className='dis-16 mt-10' style={{color:"#666666",width:'450px'}}>
             More than 2,000 firefighters are battling bushfires, which escalated in intensity 
             late on Thursday.  Australia's largest city has been blanketed by thick smoke all week, 
@@ -40,8 +38,9 @@ export default function Disasters() {
             destroyed more than 700 homes across Australia. The severity of the blazes so early in the 
             fire season has caused alarm, and prompted calls for greater action to tackle climate change.
           </div>
+        </div>
         <div className='helpbtn' onClick={() => {window.open('https://www.bbc.com/news/world-australia-50680083')}}>
-          <div className='help mt-40 bottombar border-green'>Read More</div>
+            <div className='help'>Read More</div>
         </div>
       </div>
     </div>
@@ -51,10 +50,9 @@ export default function Disasters() {
       <img className='img' src={require("../../assets/images/disflood.jpg")}/>
       {/* right */}
       <div className='ml-57'>
-        <div className='rightlil fz-12 mt-10'>
-          <div>EVENTS</div>
-          <div className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>1 April 2022</div>
-        </div>
+        <div className='rightlil fz-12'>
+          <div>EVENTS<span className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>1 April 2022</span></div>
+        
         <div className='mt-16 fz-32'>Australia floods: More rain adds to struggle of rebuilding</div>
           <div className='dis-16 mt-10' style={{color:"#666666",width:'450px'}}>
           Lismore, Australia – In late February, torrential rain hit the northern part of the Australian state of 
@@ -63,8 +61,9 @@ export default function Disasters() {
           “Everyone was still raw from the other one, and it’s not as if the town had [been] repaired … there’s
            still quite a few thousand condemned homes and people displaced everywhere.”
           </div>
+        </div>
         <div className='helpbtn' onClick={() => {window.open('https://reliefweb.int/map/australia/australia-floods-dg-echo-daily-map-03032022')}}>
-          <div className='help mt-80 bottombar border-green'>Read More</div>
+          <div className='help'>Read More</div>
         </div>
       </div>
     </div>
@@ -74,10 +73,8 @@ export default function Disasters() {
       <img className='img' src={require("../../assets/images/disearthquake.jpg")}/>
       {/* right */}
       <div className='ml-57'>
-        <div className='rightlil fz-12 mt-10'>
-          <div>EVENTS</div>
-          <div className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>25 January 2022</div>
-        </div>
+        <div className='rightlil fz-12'>
+          <div>EVENTS<span className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>25 January 2022</span></div>
         <div className='mt-16 fz-32'>'The windows were shaking':  4.7 magnitude earthquake hitting WA town</div>
           <div className='dis-16 mt-10' style={{color:"#666666",width:'450px'}}>
           In the Wagin area alone there have already been more than 60 earthquakes this year, 
@@ -87,8 +84,9 @@ export default function Disasters() {
           GA said.By 6.38am, an aftershock with a preliminary magnitude of 3.6 had been recorded by 
           GA's National Earthquake Alerts Centre.
           </div>
+        </div>
         <div className='helpbtn' onClick={() => {window.open('https://www.volcanodiscovery.com/earthquakes/australia.html')}}>
-          <div className='help mt-20 bottombar border-green'>Read More</div>
+          <div className='help'>Read More</div>
         </div>
       </div>
     </div>
@@ -98,18 +96,17 @@ export default function Disasters() {
       <img className='img' src={require("../../assets/images/disstorm.jpg")}/>
       {/* right */}
       <div className='ml-57'>
-        <div className='rightlil fz-12 mt-10'>
-          <div>EVENTS</div>
-          <div className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>20 April 2022</div>
-        </div>
+        <div className='rightlil fz-12'>
+          <div>EVENTS<span className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>20 April 2022</span></div>
         <div className='mt-16 fz-32'>113mm overnight: Emergency alerts, flood warning after deluge</div>
           <div className='dis-16 mt-10' style={{color:"#666666",width:'450px'}}>
           An emergency alert has been issued this morning for areas west of Brisbane due to ongoing flash 
           flooding and heavy rainfall as Queenslanders are being warned a late-season cyclone is still likely
           to form over the Coral Sea this week.
           </div>
+        </div>
         <div className='helpbtn' onClick={() => {window.open('http://www.bom.gov.au/cyclone/')}}>
-        <div className='help bottombar border-green' style={{marginTop:"140px"}}>Read More</div>
+          <div className='help'>Read More</div>
         </div>
       </div>
     </div>
@@ -119,19 +116,18 @@ export default function Disasters() {
       <img className='img' src={require("../../assets/images/diswind.jpg")}/>
       {/* right */}
       <div className='ml-57'>
-        <div className='rightlil fz-12 mt-10'>
-          <div>EVENTS</div>
-          <div className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>27 January 2022</div>
-        </div>
-        <div className='mt-16 fz-32'>Storm destroys homes, damages infrastructure on flood-hit Eyre Peninsula</div>
+        <div className='rightlil fz-12'>
+          <div>EVENTS<span className='ml-8' style={{color:"#CCCCCC",marginLeft:"8px"}}>27 January 2022</span></div>
+          <div className='mt-16 fz-32'>Storm destroys homes, damages infrastructure on flood-hit Eyre Peninsula</div>
           <div className='dis-16 mt-10' style={{color:"#666666",width:'450px'}}>
           Homes have been destroyed and trees stripped of leaves by a severe storm that tore through parts of South
-           Australia's Eyre Peninsula just days after flooding rains.
+          Australia's Eyre Peninsula just days after flooding rains.
           The Bureau of Meteorology recorded almost 50 millimetres of rainfall at the Port Lincoln airport, 
           to the south, in about five hours on Wednesday night.
           </div>
+        </div>
         <div className='helpbtn' onClick={() => {window.open('https://www.9news.com.au/storms')}}>
-        <div className='help bottombar border-green' style={{marginTop:"90px"}}>Read More</div>
+            <div className='help'>Read More</div>
         </div>
       </div>
     </div>

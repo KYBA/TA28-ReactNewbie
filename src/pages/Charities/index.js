@@ -114,7 +114,7 @@ export default function Activites() {
       pageNum,
       pageSize: 10
     }
-    let res = await getActivities(params==undefined?defeultparams:params)
+    let res = await getActivities(params == undefined?defeultparams:params)
     console.log(res)
     let data = res?.data?.data?.list.map((item) => {
       return {

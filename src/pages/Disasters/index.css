@@ -48,9 +48,11 @@
 }
 
 .rightlil{
+    height: 456px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
+
 .fz-12{
     font-family: 'Roboto';
     font-style: normal;
@@ -74,14 +76,6 @@
     margin-top: 16px;
 }
 
-.bottombar {
-    border-bottom: 6px solid #ccc !important
-}
-
-.border-green {
-    border-color: #1F6256 !important
-}
-
 .help{
     font-family: 'Roboto';
     font-style: normal;
@@ -92,7 +86,11 @@
 }
 
 .helpbtn{
-    width: 84px;
+    width: 100px;
     height: 28px;
     cursor: pointer;
+    margin-top: -28px;
+    border-bottom: 6px solid #ccc;
+    border-color: #1F6256;
+    text-align: center;
 }

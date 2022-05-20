@@ -65,7 +65,7 @@ export default function Result() {
                 </div>
                 <div className='fz-16grey mt-20'>Compare with the average</div>
                 <div>
-                    <Progress percent={avgPercent.toFixed(2) * 100} strokeColor="#fca100"/>
+                    <Progress percent={Math.floor(avgPercent.toFixed(2) * 100)} strokeColor="#fca100"/>
                 </div>
             </div>
             <div className='analyzbox'>
@@ -80,9 +80,9 @@ export default function Result() {
                 <div className='rightbox'>
                     {questionVOs.map((v, i) => {
                         return (
-                            <div key={i} className='row'>
-                                <div className='chart1'>
-                                    <div className='pBox'>
+                            <div key={i} className='row' >
+                                <div className='chart1' title='The average correct rate of this question'>
+                                    <div className='pBox' >
                                         <Progress type="circle" strokeColor="#fca100" percent={Math.floor(v.percent.toFixed(2) * 100)} />
                                     </div>
                                 </div>
