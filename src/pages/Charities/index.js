@@ -12,7 +12,7 @@ import ActiveList from '../../components/ActiveList'
 
 export default function Activites() {
 
-  const childRef = useRef(); //关键部分
+  const childRef = useRef(); 
 
   // const [searchValue, setSearchValue] = useState('')
   const [activities, setActivities] = useState([])
@@ -140,7 +140,7 @@ export default function Activites() {
 
   return (
     <div className='container'>
-      {/* 头部 */}
+      {/* Head */}
       <div className="header">
         <div className='fiveroundArrBg'></div>
         <div className='sixroundArrBg'></div>
@@ -156,7 +156,7 @@ export default function Activites() {
         <img alt="" className='header_img' src={require('../../assets/images/chairtypic.jpg')} />
       </div>
 
-      {/* 搜索区域 */}
+      {/* Search bar */}
       {/* <div className='isSearch'>
         <div className='tip'>EXPLORING OPTIONS</div>
         <div className='title fz-48T'>Search charities for keyword</div>
@@ -176,7 +176,7 @@ export default function Activites() {
         <div></div>
       </div> */}
 
-      {/* list 列表加搜索 */}
+      {/* Filter */}
       <div className='isList ml-at' >
         <ActiveList childRef={childRef} activities={activities} />
         <div className="right">
@@ -294,24 +294,9 @@ export default function Activites() {
 
       <div className="App">
   </div>
-      {/* 底部切换分页 */}
+      {/* Pages change */}
       <div className='isPage isHaveRoundBg'>
       <Pagination defaultCurrent={pageNum} total={total} onChange={onChangePagination} />
-        {/* <div className='eightroundArrBg'></div>
-        {
-          [...Array(totalPage)].map((item, index) => {
-
-            let curPage = index + 1;
-            let key = Math.random().toFixed(10) + index;
-            return (
-              <div
-                key={key}
-                className={curPage === pageNum ? 'btn isPageText isWhiteText' : 'btn'}
-                onClick={() => setPageCheck(index + 1)}
-              > {curPage}</div>
-            )
-          })
-        } */}
 
       </div>
     </div >

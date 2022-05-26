@@ -25,7 +25,7 @@ export default function ABoutus() {
   
   return (
     <div className='educontainer ml-at'>
-      {/* 标题部分 */}
+      {/* title */}
       <div className='eduheadbox'>
         <div className='eduleftbox'>
           <div className='fz-64 colorBlack'>Don't panic when disaster strikes.</div>

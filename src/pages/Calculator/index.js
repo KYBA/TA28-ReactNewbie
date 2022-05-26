@@ -114,7 +114,7 @@ export default function Caculater() {
           </div>
           <div className="mt-40" style={{paddingLeft:'20px',paddingTop:'24px'}}>
             <Button onClick={() => {
-              // 计算结果
+              // Result
               setResult2(Math.floor(peoplNum * 14 * days))
             }} style={{background: "#FCA100",width:'200px',height:'40px'}} type="primary" className='fz-18wh'>Calculate</Button>
           </div>
@@ -125,63 +125,6 @@ export default function Caculater() {
         <div className='fz-17 txtct mt-20'>An extra A$14 to help her/him one more day.</div>
       </div>
 
-
-      {/* <h1>Amout</h1>
-      <div>
-        <InputNumber placeholder='钱数' value={money} onChange={(val) => {
-          setMoney(val)
-        }} />
-      </div>
-      
-
-      <div>
-      <Button onClick={() => {
-        // 计算结果
-        setResult(Math.floor(money / 14))
-      }} type="primary">Caculate</Button>
-      </div>
-
-      {result && (
-        <div>
-        You could help one victim for <span className='fz-24'>{result}</span> days.
-        </div>
-      )}
-
-
-      
-
-      <h1>How many victim you want to help</h1>
-      <div>
-        <InputNumber placeholder='人数' value={peoplNum} onChange={(val) => {
-          setPeoplNum(val)
-        }} />
-      </div>
-
-      <h1>How many days</h1>
-      <div>
-        <Select style={{
-          width: 200
-        }} value={days} placeholder="时间" onChange={(val) => {
-          setDays(val)
-        }}>
-          <Option value={1}>ona day</Option>
-          <Option value={7}>a week</Option>
-          <Option value={30}>a month</Option>
-        </Select>
-      </div>
-      
-      <div>
-      <Button onClick={() => {
-        // 计算结果
-        setResult2(Math.floor(peoplNum * 14 * days))
-      }} type="primary">Calculate</Button>
-      </div>
-
-      {result2 && (
-      <div> 
-        ${result2}.
-      </div>
-      )} */}
 
       <Outlet />
     </div>
